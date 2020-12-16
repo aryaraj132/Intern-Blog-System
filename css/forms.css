@@ -1,0 +1,201 @@
+ /*This is stylesheet for the website created by Aryan Raj under Code Factory, Please do not copy it without permission.*/
+
+ .form {
+    background: #fff;
+    border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+}
+.form-panel{
+    width: 80%;
+    background: #fff;
+    border: 0.5px solid;
+    margin: 100px auto 0;
+    padding: 50px;
+}
+.post-panel{
+    width: 80%;
+    background: #fff;
+    margin: 100px auto 0;
+}
+.login-wrap {
+    margin: 200px 0 100px 0;
+    
+}
+.login-box{
+    display: block;
+    max-width: 330px;
+    margin: 100px auto 0;
+    border: 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+}
+.form h2{
+    margin: 0;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 0px 5px 0 0;
+    -webkit-border-radius: 0px 5px 0 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #32DBC6;
+}
+.form a{
+    color:#68dff0 !important;
+}
+.form-container  {
+    padding:20px;
+    text-align:center;
+}
+.form-input {
+display: inline-block;
+padding-left:10px;
+width: 100%;
+height: 34px;
+margin-bottom:20px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-input:focus {
+border-color: #66afe9;
+outline: 0;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+select{
+    margin:0;
+    text-transform:none;
+    background:#fff;
+    height: 30px;
+    line-height: 30px;
+    width:100px !important;
+}
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+line-height: 34px;
+line-height: 1.42857143 \0;
+    width:200px !important;
+}
+input[type="file"]{
+    line-height: 34px;
+    border: none;
+    line-height: 1.42857143 \0;
+    width:200px !important;
+}
+textarea{
+height: 500px !important;
+}
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin: 10px 0 10px 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+outline: thin dotted;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+    border-radius:10px;
+font-weight:700;
+text-decoration: none;
+}
+.btn:active{
+outline: 0;
+-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+       
+.btn-verify{
+	width:40%;
+	background:#55D2D2;
+	color:#fff;
+}
+.btn-reset{
+	width:40%;
+	background:red;
+	color:#fff;
+}
+.btn-post{
+    width:20%;
+    background:#3dbb91;
+    color:#fff;
+}
+.btn-login{
+    width:100%;
+    background:#55D2D2;
+    color:#fff;
+}
+.btn-login:hover {
+    background-color: #32DBC65;
+border-color: #32DBC6;
+
+}
+
+.msg{
+    padding-left: 10px;
+    border: solid 1px red;
+    border-radius: 10px;
+    color: red;
+    margin: 10px 0 10px 0;
+}
+.msg li{
+    list-style: none;
+}
+.error{
+    border: solid 1px rgb(92, 19, 19);
+    background: rgb(231, 156, 156);
+    color: rgb(94, 14, 14);
+}
+.success{
+    border: solid 1px rgb(0, 58, 0);
+    background: rgb(24, 150, 24);
+    color: rgb(0, 58, 0);
+}
+.edit{
+    color: green !important;
+}
+.delete{
+    color: rgb(245, 0, 0) !important;
+}
+.publish{
+    color: blue !important;
+}
+.unpublish{
+    color:blueviolet !important;
+}
+.btn-post-count{
+    background:#32dbc6;
+    color:#fff;
+}
