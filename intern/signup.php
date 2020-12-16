@@ -131,10 +131,7 @@
                                 <h2 class="footer-heading mb-4">Browse Link</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="<?php echo BASE_URL . 'index.php'?>" class="nav-link">Home</a></li>
-                                    <li><a href="work.php">Work</a></li>
-                                    <li><a href="service.php">Services</a></li>
-                                    <li><a href="blog.php">Blog</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
+                  <li><a href="<?php echo BASE_URL . 'intern/verify.php'?>" class="nav-link">Verify Interns</a></li>
                                 </ul>
                             </div>
                             
