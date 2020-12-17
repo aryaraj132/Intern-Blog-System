@@ -52,8 +52,8 @@ if (isset($_GET['t'])) {
         <div class="row">
           <div class="col-md-6">
             <p class="mb-0">
-              <span class="mr-3"><strong class="text-white">Contact Number:</strong> <a href="tel://+918340728808">+91 9643054453</a></span>
-              <span><strong class="text-white">Email:</strong> <a href="#">aryaraj132@gmail.com</a></span>
+              <span class="mr-3"><strong class="text-white">Contact Number:</strong> <a href="tel://+918340728808">+91 8340728808</a></span>
+              <span><strong class="text-white">Email:</strong> <a href="mailto://aryaraj132@gmail.com">aryaraj132@gmail.com</a></span>
             </p>
           </div>
           
@@ -142,7 +142,7 @@ if (isset($_GET['t'])) {
             <h2 class="footer-heading mb-4">Contact</h2>
             <ul class="list-unstyled">
               
-              <li><a href="tel:9643054453">+91 9643054453</a></li>
+              <li><a href="tel:8340728808">+91 8340728808</a></li>
               <li><a href="mailto:aryaraj132@gmail.com">aryaraj132@gmail.com</a></li>
 
             </ul>
