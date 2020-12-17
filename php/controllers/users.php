@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_WARNING);
+error_reporting(E_WARNING);
 include(ROOT_PATH . '/php/database/db.php');
 include(ROOT_PATH . '/php/validateUsers.php');
 $errors = array();

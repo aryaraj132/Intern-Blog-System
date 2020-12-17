@@ -20,27 +20,57 @@ if (isset($_GET['view-more'])) {
   }
 if(isset($_GET['id'])){
     $post = selectOne('posts', ['id' => $_GET['id']]);
-    $id = $post['id'];
-    $title = $post['title'];
-    $body = $post['body'];
+    if( $_SESSION['username'] == 'aryaraj132' && $post['user_id'] == 'aryaraj132'){
+        $id = $post['id'];
+        $title = $post['title'];
+        $body = $post['body'];
+    }
+    elseif($post['user_id'] == 'aryaraj132' && $_SESSION['username'] !== 'aryaraj132'){
+        $_SESSION['message'] = 'You are not authorized';
+        $_SESSION['type'] = 'error';
+        header("location: " . "ManageBlog.php");
+    }
+    else{
+        $id = $post['id'];
+        $title = $post['title'];
+        $body = $post['body'];
+    }
 }
 if(isset($_GET['del_id'])){
-    $count = delete($table, $_GET['del_id']);
-    $_SESSION['message'] = 'Post deleted successfully';
-    $_SESSION['type'] = 'error';
+    $del_post = selectOne($table, ['id' => $_GET['del_id']]);
+    if( $_SESSION['username'] == 'aryaraj132' && $del_post['user_id'] == 'aryaraj132'){
+        $count = delete($table, $_GET['del_id']);
+        $_SESSION['message'] = 'Post deleted successfully';
+        $_SESSION['type'] = 'error';
+    }
+    elseif($del_post['user_id'] == 'aryaraj132' && $_SESSION['username'] !== 'aryaraj132'){
+        $_SESSION['message'] = 'You are not authorized';
+        $_SESSION['type'] = 'error';
+    }
+    else{
+        $count = delete($table, $_GET['del_id']);
+        $_SESSION['message'] = 'Post deleted successfully';
+        $_SESSION['type'] = 'error';
+    }
     header("location: " . "ManageBlog.php");
     exit();
 }
 if(isset($_GET['published'])&&isset($_GET['p_id'])){
     $published = $_GET['published'];
     $p_id = $_GET['p_id'];
-    update($table, $p_id, ['published'=>$published]);
-    if ($published==0) {
-        $_SESSION['message'] = 'Post unpublished successfully';
+    if( $_SESSION['username'] == 'aryaraj132'){
+        update($table, $p_id, ['published'=>$published]);
+        if ($published==0) {
+            $_SESSION['message'] = 'Post unpublished successfully';
+            $_SESSION['type'] = 'error';
+        } else {
+            $_SESSION['message'] = 'Post published successfully';
+            $_SESSION['type'] = 'success';
+        }
+    }
+    else{
+        $_SESSION['message'] = 'You are not authorized';
         $_SESSION['type'] = 'error';
-    } else {
-        $_SESSION['message'] = 'Post published successfully';
-        $_SESSION['type'] = 'success';
     }
     header("location: " . "ManageBlog.php");
     exit();
